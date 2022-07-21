@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="styles.css">
+    
+
+</head>
+<body>
+    <div id = calculadora>
+    <p id="caixa_de_resultado"> </p>
+
+    <nav id = apagadores>
+        <ul>
+            <li><button onclick="_clear()" id="Clear" >clear</button></li>
+            <li><button onclick="_delete()" id="Delete" >delete</button></li>
+        </ul>
+    </nav>
+   
+
+    <nav id ="teclado">
+        <ol>
+            <li><button onclick="_Numero('7')"">7</button></li>
+            <li><button onclick="_Numero('8')"">8</button></li>
+            <li><button onclick="_Numero('9')"">9</button></li>
+            <li><button onclick="_operação('+')" id = "soma">+</button></li>
+        </ol>
+        <ol>
+            <li><button onclick="_Numero('4')"">4</button></li>
+            <li><button onclick="_Numero('5')"">5</button></li>
+            <li><button onclick="_Numero('6')"">6</button></li>
+            <li><button onclick="_operação('-')" id = "subitração">-</button></li>
+        </ol>
+        <ol>
+            <li><button onclick="_Numero('1')"">1</button></li>
+            <li><button onclick="_Numero('2')"">2</button></li>
+            <li><button onclick="_Numero('3')"">3</button></li>
+            <li><button onclick="_operação('*')" id = "multiplicação">x</button></li>
+        </ol>
+        <ol>
+            <li><button onclick="_Numero('0')">0</button></li>
+            <li><button onclick="_Numero('.')">,</button></li>
+            <li><button onclick="igual()">=</button></li>
+            <li><button onclick="_operação('/')" id = "divisão">/</button></li>
+        </ol>
+    </nav>
+    
+</div>
+
+    <script src="calculadora.js"></script>
+
+</body>
+</html>
