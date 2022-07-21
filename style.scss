@@ -1,0 +1,98 @@
+$tamanho_min : 2.5rem;
+
+$padding : 0.5rem;
+
+$cor1 : rgb(60, 60, 100);
+$cor2 : rgb(90, 90, 120);
+$cor3 : rgb(243, 54, 54);
+$cor4 : rgb(200, 200, 240);
+$cor5 : rgb(231, 231, 253);
+$cor6 : rgb(150, 150, 200);
+
+
+@mixin alinhamento_texto {
+    color:  $cor4;
+
+    display: flex;
+    flex-direction: row-reverse;
+
+    align-self: flex-end;
+    white-space: normal;
+
+    min-height: 1rem;
+    padding: 3%;
+
+    position: relative;
+    bottom: 0;
+
+
+}
+
+
+*{
+padding: 0;
+margin: 0;
+
+    #calculadora{
+        width: $tamanho_min * 4;
+        background-color: $cor1;
+        border-radius: 1%;
+
+        p{
+            @include alinhamento_texto();
+            color: $cor6;
+            font-size: 0.8rem;
+        }
+
+        h2{
+            @include alinhamento_texto();
+            color: $cor5;
+            font-size: 1.2rem;
+
+        }
+        
+
+        #celula_botões_numericos{
+            display: grid;
+            grid-template-columns: auto auto auto auto; 
+            grid-auto-flow:dense;
+            direction: rtl;
+
+            button{
+                border: none;
+                width: $tamanho_min;
+                height: $tamanho_min;
+                color: $cor4;
+                background-color: transparent;
+                transition: 0.3s;
+            }
+
+            #igual{
+                background-color: $cor3;
+                border-radius: 3%;
+            }
+
+            #especial{
+                color: $cor3;
+                background-color: $cor2;
+            }
+
+            button:hover{
+                    font-size: 150%;
+                    
+                    color: $cor5;
+                }
+        }
+    }
+}
+@media only screen and (max-width: 768px) {
+    *{
+        font-size: 10vw;
+        background-color: $cor1;
+    }
+    #calculadora {
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+    }
+}

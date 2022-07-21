@@ -1,0 +1,98 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+}
+
+* #calculadora {
+  width: 10rem;
+  background-color: #3c3c64;
+  border-radius: 1%;
+}
+
+* #calculadora p {
+  color: #c8c8f0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  white-space: normal;
+  min-height: 1rem;
+  padding: 3%;
+  position: relative;
+  bottom: 0;
+  color: #9696c8;
+  font-size: 0.8rem;
+}
+
+* #calculadora h2 {
+  color: #c8c8f0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  white-space: normal;
+  min-height: 1rem;
+  padding: 3%;
+  position: relative;
+  bottom: 0;
+  color: #e7e7fd;
+  font-size: 1.2rem;
+}
+
+* #calculadora #celula_botões_numericos {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto auto;
+      grid-template-columns: auto auto auto auto;
+  grid-auto-flow: dense;
+  direction: rtl;
+}
+
+* #calculadora #celula_botões_numericos button {
+  border: none;
+  width: 2.5rem;
+  height: 2.5rem;
+  color: #c8c8f0;
+  background-color: transparent;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+* #calculadora #celula_botões_numericos #igual {
+  background-color: #f33636;
+  border-radius: 3%;
+}
+
+* #calculadora #celula_botões_numericos #especial {
+  color: #f33636;
+  background-color: #5a5a78;
+}
+
+* #calculadora #celula_botões_numericos button:hover {
+  font-size: 150%;
+  color: #e7e7fd;
+}
+
+@media only screen and (max-width: 768px) {
+  * {
+    font-size: 10vw;
+    background-color: #3c3c64;
+  }
+  #calculadora {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+  }
+}
+/*# sourceMappingURL=style.css.map */
