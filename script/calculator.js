@@ -197,14 +197,24 @@ export default class Calculator{
     
             //contrui o numero que sera usado na conta
             default:
-                if(this.isOperator(array[l - 1]) || l === 0 || array[l - 1] === '0'){
-                    array.push(n)
-                } else{
-                    array[l - 1] += n ;
-                } 
+                let lmax = 0
+
+                for (let index = 0; index < array.length; index++) {
+                    lmax += array[index].toString().length;  
+                }
+        
+                if (lmax < 8) {
+                    if(this.isOperator(array[l - 1]) || l === 0 || array[l - 1] === '0'){
+                        array.push(n)
+                    } else{
+                        array[l - 1] += n ;
+                    } 
+                }
+                
                 break;
         }
 
+        console.log(array)
         array[0] = array.length === 1 && array[0].toString().length > 9 ? [parseFloat(array[0]).toExponential(5)] : array[0]
         return [this.log(array), this.logMath]
     }    

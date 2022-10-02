@@ -79,7 +79,7 @@ button:active {
   }
   h2, p {
     margin-bottom: 2rem;
-    font-size: 5rem !important;
+    font-size: 3rem !important;
   }
   #botoes {
     min-height: 500px;
@@ -90,7 +90,7 @@ button:active {
     width: 100% !important;
     min-height: 2rem !important;
     height: 100% !important;
-    font-size: 4rem !important;
+    font-size: 3rem !important;
   }
   #calculadora {
     width: 100%;
