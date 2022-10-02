@@ -25,10 +25,11 @@
 
 ### Demostração da Aplicação
 <br>
-<a href="https://bsantuz.github.io/calculator/">Teste a aplicação<a>
-<img src="./c-web.png">
-[![Watch the video](./math.mp4)
+<a href="https://bsantuz.github.i
 
+o/calculator/">Teste a aplicação<a>
+<img src="./c-web.png">
+https://user-images.githubusercontent.com/109471488/193479331-497f9140-89a9-449d-b756-44d8d9ebcbba.mp4
 
 ### Como executar o projeto
 Antes de começar, você vai precisar ter instalado em sua máquina um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/)
