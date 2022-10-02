@@ -1,7 +1,7 @@
 export default class Calculator{
 
     constructor(){
-        this.arrayEquation = new Array()
+        this.arrayEquation = new Array("")
         this.logMath = ''
     }
     
