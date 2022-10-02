@@ -19,6 +19,10 @@ ReadmeEdit.js:74
 - [x] operações básicas
 - [x] histórico simples de conta e resposta
 - [x] mais de uma operação por vez
+- [x] refatorar o codigo
+- [x] testes unitários
+- [x] script type module
+
 
 ### Demostração da Aplicação
 * Possui 3 dificuldades: fácil, media e difícil
@@ -34,8 +38,14 @@ Antes de começar, você vai precisar ter instalado em sua máquina um editor pa
 # Clone este repositório
 $ git clone <>
 
+
 # Acesse a pasta do projeto no terminal/cmd
 $ cd ...
+
+# Instale as dependencias
+$ npm install --save-dev jest
+$ npm install --save-dev @babel/preset-env
+$ npm i babel-jest
 
 # Execute a aplicação 
 $ index.html ou server live(plugin do vscode)
@@ -46,6 +56,9 @@ $ index.html ou server live(plugin do vscode)
 ### Tecnologias utilizadas
 
 * front end basic(html, css, js)
+* babel
+* jets
+* sass
 
 ### Autor
 Feito com ❤️ por Bruno Santuz 👋🏽 Entre em contato!

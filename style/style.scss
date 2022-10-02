@@ -1,0 +1,115 @@
+$padding : 0.5rem;
+$tamanho_min : 1rem; 
+
+$cor1 : rgb(60, 60, 100);
+$cor2 : rgb(90, 90, 120);
+$cor3 : rgb(243, 54, 54);
+$cor4 : rgb(200, 200, 240);
+$cor5 : rgb(231, 231, 253);
+$cor6 : rgb(150, 150, 200);
+
+
+@mixin alinhamento_texto {
+    color:  $cor4;
+
+    display: flex;
+    flex-direction: row-reverse;
+
+    align-self: flex-end;
+    white-space: normal;
+
+    min-height: 3rem;
+    font-size: 2rem;
+
+    padding: 0.2rem 1.3rem;
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  
+}
+
+button{
+    border: none;
+    width: $tamanho_min * 4;
+    height: $tamanho_min * 4;
+    color: $cor4;
+    background-color: transparent;
+    transition: 0.3s;
+    font-size: 1.5rem;
+    
+        &:hover{
+            font-size: 2rem;
+            color: $cor5;
+        }
+        &:active{
+            background-color: rgb(127, 255, 219)!important;
+            color:$cor3;
+        }
+}
+
+#calculadora{
+    width: fit-content;
+    background-color: $cor1;
+    border-radius: 1%;
+
+    p{
+        @include alinhamento_texto();
+        color: $cor6;
+     
+    }
+
+    h2{
+        @include alinhamento_texto();
+        color: $cor5;
+    }
+}
+
+#botoes{
+    display: grid;
+    grid-template-columns: auto auto auto auto; 
+    grid-auto-flow:dense;
+    direction: rtl;
+}
+
+#igual{
+    background-color: $cor3;
+    border-radius: 3%;
+}
+
+#especial{
+    color: $cor3;
+    background-color: $cor2;
+}
+
+@media only screen and (max-width: 768px) { //768px
+
+    *{
+        background-color: $cor1;
+    }
+    body{
+        display: flex;
+        justify-content: center;
+    }
+
+    h2, p{
+        margin-bottom: 2rem;
+        font-size: 5rem!important;
+    }
+   
+    button{
+        width: 100%!important;
+        height: fit-content!important;
+        padding: 3rem;
+        height: 6rem;
+        font-size: 4rem!important;
+    }
+    #calculadora{
+        position: absolute;
+        bottom: 0;
+        width: 100vw;
+    }
+}
