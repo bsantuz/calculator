@@ -163,7 +163,7 @@ export default class Calculator{
                     return e.indexOf(".") > -1;
                 })
                 if(dot.length === 0){
-                    array[0] === ''  ? array.push('0.') : array[l - 1] += '.' ;
+                    array[0] === ''  ? array[l - 1] +='0.' : array[l - 1] += '.' ;
                 }
                 break;
 
