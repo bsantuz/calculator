@@ -25,8 +25,6 @@ ReadmeEdit.js:74
 
 
 ### Demostração da Aplicação
-* Possui 3 dificuldades: fácil, media e difícil
-* Ache os pares para ganhar
 <br>
 <a href="https://bsantuz.github.io/calculator/">Teste a aplicação<a>
 <img src="./c-web.png">
