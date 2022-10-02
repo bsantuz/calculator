@@ -1,4 +1,3 @@
-ReadmeEdit.js:74 
 # Calculadora
 <p align="center">Calculadora simples.</p>
 <h4 align="center"> Status do projeto: completo</h4>
